@@ -1,0 +1,73 @@
+# Modern Python Project Configuration
+# This file is used with modern tools like uv, pip-tools, poetry, etc.
+# Usage with uv: uv pip install -e .
+#                uv pip compile pyproject.toml -o requirements.txt
+
+[project]
+name = "DSE315_Demo"
+version = "0.1.0"
+description = "Data Science Demo Project for DSP315"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+
+# Project dependencies
+dependencies = [
+    # Core Data Science Libraries
+    "numpy>=1.26.4,<2.0.0",
+    "pandas>=2.2.1,<3.0.0",
+    "matplotlib>=3.8.3,<4.0.0",
+    "seaborn>=0.13.2,<0.14.0",
+
+    # Scientific Computing
+    "scipy>=1.12.0,<2.0.0",
+
+    # Machine Learning
+    "scikit-learn>=1.4.1,<2.0.0",
+
+    # Jupyter Notebook
+    "jupyter>=1.0.0,<2.0.0",
+    "jupyterlab>=4.1.5,<5.0.0",
+
+    # Data Visualization
+    "plotly>=5.19.0,<6.0.0",
+
+    # Utilities
+    "requests>=2.31.0,<3.0.0",
+]
+
+[project.optional-dependencies]
+# Development dependencies
+dev = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+]
+
+# Deep Learning dependencies
+deep-learning = [
+    "torch>=2.2.0",
+    "tensorflow>=2.16.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["datasci_demo"]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true

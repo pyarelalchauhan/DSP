@@ -1,0 +1,37 @@
+# Conda/Mamba Environment File - MINIMAL VERSION FOR TESTING
+# This file is used with conda and mamba
+# Usage: conda env create -f environment.yml
+#        mamba env create -f environment.yml
+
+name: demo_env
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  # Python version
+  - python=3.11
+
+  # Minimal packages for demonstration
+  - numpy
+  - requests
+
+  # pip for installing pip packages
+  - pip
+  - pip:
+    # Lightweight pip-only package for demonstration
+    - colorama==0.4.6  # Cross-platform colored terminal text
+
+# NOTE: This is a minimal environment for quick testing and demonstration.
+# For a full Data Science environment, uncomment the packages below:
+#
+# Full Data Science Stack (uncomment to use):
+# - pandas
+# - matplotlib
+# - seaborn
+# - scipy
+# - scikit-learn
+# - jupyter
+# - jupyterlab
+# - plotly
