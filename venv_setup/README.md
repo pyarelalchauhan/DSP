@@ -66,9 +66,9 @@ Each operating system has its own detailed README with:
 - Troubleshooting tips
 - Classroom demonstration scripts
 
-### Step 3: Follow Along in Class
+### Step 3: Follow Along 
 
-Your instructor will demonstrate each method. You can:
+You can:
 1. Follow along with the commands
 2. Test in the corresponding subdirectories
 3. Use the demo files (requirements.txt, environment.yml)
@@ -1160,4 +1160,4 @@ pyenv local myenv
 ---
 
 **Last Updated**: October 2025
-**Maintained for**: DSP315 - Data Science Course
+**Maintained for**: DSE315 - Data Science Course
