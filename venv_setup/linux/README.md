@@ -39,7 +39,7 @@ pwd
 cat /etc/os-release
 
 # Check available disk space
-df -h /NFSDISK2/pyare/TAship/DSP315/
+df -h /path/to/directory/where/you/want/to/check
 
 # Update package lists (recommended before installing anything)
 sudo apt update  # For Ubuntu/Debian
@@ -132,7 +132,7 @@ python3 --version
 
 ```bash
 # Navigate to venv directory
-cd /NFSDISK2/pyare/TAship/DSP315/venv_setup/linux/venv
+cd venv_setup/linux/venv
 
 # Create virtual environment named 'demo_env'
 python3 -m venv demo_env
@@ -153,11 +153,11 @@ source demo_env/bin/activate
 
 # Check Python location
 which python
-# Should show: /NFSDISK2/pyare/TAship/DSP315/venv_setup/linux/venv/demo_env/bin/python
+# Should show: venv_setup/linux/venv/demo_env/bin/python
 
 # Check pip location
 which pip
-# Should show: /NFSDISK2/pyare/TAship/DSP315/venv_setup/linux/venv/demo_env/bin/pip
+# Should show: venv_setup/linux/venv/demo_env/bin/pip
 ```
 
 ### Step 4: Upgrade pip
@@ -268,7 +268,7 @@ virtualenv --version
 
 ```bash
 # Navigate to virtualenv directory
-cd /NFSDISK2/pyare/TAship/DSP315/venv_setup/linux/virtualenv
+cd venv_setup/linux/virtualenv
 
 # Create environment
 virtualenv demo_env
@@ -375,7 +375,7 @@ source ~/.bashrc
 
 ```bash
 # Navigate to conda directory
-cd /NFSDISK2/pyare/TAship/DSP315/venv_setup/linux/conda
+cd venv_setup/linux/conda
 
 # Create environment from YAML file
 conda env create -f ../environment.yml
@@ -516,7 +516,7 @@ conda config --show channels
 
 ```bash
 # Navigate to miniconda directory
-cd /NFSDISK2/pyare/TAship/DSP315/venv_setup/linux/miniconda
+cd venv_setup/linux/miniconda
 
 # Option 1: From environment.yml
 conda env create -f ../environment.yml
@@ -881,7 +881,7 @@ uv --version
 
 ```bash
 # Navigate to uv directory
-cd /NFSDISK2/pyare/TAship/DSP315/venv_setup/linux/uv
+cd venv_setup/linux/uv
 
 # Create virtual environment (VERY FAST!)
 uv venv demo_env
@@ -1123,4 +1123,4 @@ deactivate
 
 **Last Updated**: October 31, 2025
 **Tested On**: Ubuntu 22.04 LTS, Python 3.10.12
-**For Course**: DSP315 - Data Science
+**For Course**: DSE315 - Data Science
