@@ -704,6 +704,13 @@ uv venv --python 3.11.0 ml-env
 uv pip install numpy --constraint constraints.txt
 
 # Install from pyproject.toml
+# 1) Install reuired version of python for your porject eg. 3.11
+uv python install 3.11
+# 2) make the venv using the required version of python
+uv venv --python 3.11
+# 3) Use it (or skip activation and use `uv run` below)
+source .venv/bin/activate
+# 4) Install your package in editable mode ( you should be in the directory where your pyproject.toml file is present)
 uv pip install -e .
 
 # Generate locked requirements
