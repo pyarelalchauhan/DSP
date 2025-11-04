@@ -41,7 +41,7 @@ venv_setup/
 
 ---
 
-## 🎯 For Students: How to Use This Repository
+## 🎯 How to Use This Repository
 
 ### Step 1: Clone the Repository
 
