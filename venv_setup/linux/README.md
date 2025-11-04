@@ -32,7 +32,7 @@ Before starting, ensure you have the following tools and check your system:
 ```bash
 # Check your current directory
 pwd
-# Should be: /NFSDISK2/pyare/TAship/DSP315/venv_setup/linux
+# Should be: /venv_setup/linux
 # This is my directory, for you it will be where you start your project
 
 # Check Linux distribution
