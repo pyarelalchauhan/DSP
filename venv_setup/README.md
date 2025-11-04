@@ -47,7 +47,7 @@ venv_setup/
 
 ```bash
 # Clone this repository
-git clone <repository-url>
+git clone https://github.com/pyarelalchauhan/DSP.git
 cd venv_setup
 
 # Navigate to your operating system directory
