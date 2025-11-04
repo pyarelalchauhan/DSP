@@ -70,7 +70,7 @@ Each operating system has its own detailed README with:
 
 You can:
 1. Follow along with the commands
-2. Test in the corresponding subdirectories ( you can create respective testing directories link uv, pyenv, venv, etc)
+2. Test in the corresponding subdirectories ( you can create respective testing directories line uv, pyenv, venv, etc)
 3. Use the demo files (requirements.txt, environment.yml)
 
 ---
